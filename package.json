@@ -1,0 +1,22 @@
+{
+  "name": "rails-api-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd frontend && yarn start",
+    "build": "cd frontend && yarn build",
+    "install": "cd frontend && yarn"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@prettier/plugin-ruby": "^0.20.1",
+    "prettier": "^2.1.2"
+  }
+}
