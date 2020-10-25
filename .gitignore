@@ -30,16 +30,24 @@ backend/config/master.key
 backend/public/packs
 backend/public/packs-test
 
+# ignore node modules
 node_modules
 frontend/node_modules
+
+# ignore yarn logs
 /yarn-error.log
 frontend/yarn-error.log
 yarn-debug.log*
 frontend/yarn-debug.log*
 .yarn-integrity
 frontend/.yarn-integrity
+
+# ignore next build files
+frontend/.next
+
 # Ignore .env file containing credentials.
 backend/.env*
+
 # Ignore Mac and Linux file system files
 *.swp
 .DS_Store
