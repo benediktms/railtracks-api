@@ -1,0 +1,5 @@
+# ignore next build
+.next
+
+# Ignor enode modules
+node_modules
