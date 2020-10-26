@@ -24,7 +24,7 @@ function App() {
       <Button variantColor='blue' onClick={fetchData}>
         show data
       </Button>
-      <p>{data ? data : null}</p>
+      <p>{data ? data.status : null}</p>
     </div>
   );
 }
