@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController
+class Api::V1::SessionsController < ApplicationController
   def create
     user = User.find_by(email: params['User']['email']).try(:authenticate, params['user']['password'])
 
@@ -10,9 +10,7 @@ class SessionsController < ApplicationController
         user: user
       }
     else
-      render json: {
-        status: 401
-      }
+      render json: { status: 401 }
     end
   end
 end
