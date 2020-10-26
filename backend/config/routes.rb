@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      # get 'tests', to: 'tests#index'
-      resources :tests, only: :index
+      get 'tests', to: 'tests#index'
+      # resources :tests, only: :index
       resources :sessions, only: :create
       resources :registrations, only: :create
     end
