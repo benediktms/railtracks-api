@@ -1,5 +1,6 @@
 # ignore next build
-.next
+frontend/build
 
 # Ignor enode modules
 node_modules
+frontend/node_modules
