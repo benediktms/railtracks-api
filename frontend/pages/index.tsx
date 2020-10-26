@@ -1,11 +1,13 @@
-import { Box, Heading, useColorMode } from '@chakra-ui/core';
+import { Box, Heading } from '@chakra-ui/core';
 import React from 'react';
 
 const Home = () => {
   return (
-    <Box>
-      <Heading>Hello World</Heading>
-    </Box>
+    <>
+      <Box w='75%'>
+        <Heading>Hello, World!</Heading>
+      </Box>
+    </>
   );
 };
 

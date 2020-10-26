@@ -1,6 +1,5 @@
-import { Box, useColorMode } from '@chakra-ui/core';
-import Head from 'next/head';
-import { ReactNode } from 'react';
+import { Box, Flex, useColorMode } from '@chakra-ui/core';
+import React, { ReactNode } from 'react';
 import { Footer } from '../components/footer/Footer';
 import { Navbar } from '../components/navbar/Navbar';
 
@@ -16,13 +15,10 @@ export const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
-      <Head>
-        <title>{'Railtracks'}</title>
-      </Head>
       <Box bg={bgColor[colorMode]} color={color[colorMode]}>
-        <Box minH='90vh' px={3}>
+        <Box minH='90vh'>
           <Navbar />
-          {children}
+          <Flex justify='center'>{children}</Flex>
         </Box>
         <Footer />
       </Box>
