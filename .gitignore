@@ -8,6 +8,8 @@
 /.bundle
 
 # Ignore all logfiles and tempfiles.
+*/log/*
+*/temp/*
 backend/log/*
 backend/tmp/*
 !/log/.keep
@@ -43,7 +45,7 @@ frontend/yarn-debug.log*
 frontend/.yarn-integrity
 
 # ignore next build files
-frontend/.next
+frontend/.build
 
 # Ignore .env file containing credentials.
 backend/.env*

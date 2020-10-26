@@ -1,7 +1,7 @@
 import { Box, Flex, useColorMode } from '@chakra-ui/core';
 import React, { ReactNode } from 'react';
-import { Footer } from '../components/footer/Footer';
-import { Navbar } from '../components/navbar/Navbar';
+import { Footer } from '../components/Footer';
+import { Navbar } from '../components/Navbar';
 
 type LayoutProps = {
   title?: string;
