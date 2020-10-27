@@ -53,6 +53,8 @@ backend/.env*
 # Ignore Mac and Linux file system files
 *.swp
 .DS_Store
+backend/.DS_Store
+frontend/.DS_Store
 
 # editor config files
 /.idea
