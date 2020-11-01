@@ -8,8 +8,8 @@
 /.bundle
 
 # Ignore all logfiles and tempfiles.
-!/log/.keep
-!/tmp/.keep
+tmp/**/*
+log/**/*
 
 # Ignore pidfiles, but keep the directory.
 !/tmp/pids/
