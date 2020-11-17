@@ -27,7 +27,10 @@ class Api::V1::UsersController < ApplicationController # GET /users/1 # GET /use
 
   # DELETE /users/1
   def destroy
-    @user.destroy head 204
+    @user.destroy
+
+    # head 204
+    response.status = 204
   end
 
   private
