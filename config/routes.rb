@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  namespace :api do
+  namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      # get 'tests', to: 'tests#index'
-      resources :tests, only: :index
+      # resources :tests, only: :index
       resources :sessions, only: :create
-      resources :registrations, only: :create
+      resources :tokens, only: :create 
+      # resources :registrations, only: :create
     end
   end
 
