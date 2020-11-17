@@ -6,8 +6,11 @@ class Api::V1::TokensController < ApplicationController
     # user&.authenticate( ... ) is shorthand for user && user.authenticate( ... )
     # this is needed so that 401 is returned both if the password is wrong or if the user does not exist
     if @user&.authenticate(user_params[:password])
+      response.status = 201
       render json: {
-               token: JsonWebToken.encode(user_id: @user.id), email: @user.email
+               status: :created,
+               token: JsonWebToken.encode(user_id: @user.id),
+               user: @user
              }
     else
       head :unauthorized
