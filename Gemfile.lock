@@ -218,7 +218,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   foreman
-  jwt (~> 2.2)
+  jwt
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   prettier
